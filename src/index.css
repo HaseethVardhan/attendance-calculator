@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 nav{
@@ -15,6 +16,7 @@ nav{
   font-family: "Playfair Display", sans-serif;
   font-weight: bold;
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
 span{
@@ -22,4 +24,46 @@ span{
   font-family: "Playfair Display", sans-serif;
   font-size: 20px;
   font-style: italic;
+}
+
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.form-elem{
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label{
+  font-size: 14px;
+  width: 80%;
+}
+
+input{
+  width: 80%;
+  height: 25px;
+  border: 0.82px solid #D1D5DB;
+  border-radius: 5px;
+}
+
+button{
+  width: 80%;
+  border: none;
+  color: white;
+  height: 40px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #1953D6;
+  border-radius: 5px;
+  margin-top: 10px;
 }
