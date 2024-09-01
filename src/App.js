@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar.js"
 import Form from "./components/Form.js"
+import Result from "./components/Result.js"
 import React from "react"
 
 function App() {
@@ -7,9 +8,9 @@ function App() {
   const [attdt, setAttdt] = React.useState({
     totalclass: '',
     totalclassatt: '',
-    atttill: ''
+    atttill: '',
+    change: false
   })
-
 
   function handleChange(event){
     const {name, value} = event.target;
@@ -21,12 +22,21 @@ function App() {
     })
   }
 
-  console.log(attdt);
+  function handleSubmit(event){
+    event.preventDefault();
+    setAttdt(prevState => {
+      return{
+        ...prevState,
+        change: true
+      }
+    })
+  }
 
   return (
     <div>
       <Navbar />
-      <Form attdt={attdt} handleChange={handleChange}/>
+      <Form attdt={attdt} handleChange={handleChange} handleSubmit={handleSubmit}/>
+      {attdt.change ? <Result attdt={attdt}/> : ''}
     </div>
   );
 }

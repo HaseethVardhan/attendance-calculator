@@ -1,12 +1,15 @@
+import React from 'react';
+
 export default function Form(props){
+
     return(
-        <form>
+        <form onSubmit={props.handleSubmit}>
             <div className="form-elem">
-                <label htmlFor="totalclass">Total Number of Classes</label>
+                <label htmlFor="totalclass">Total Classes</label>
                 <input type="number" id="totalclass" name="totalclass" onChange={props.handleChange} value={props.attdt.totalclass}></input>
             </div>
             <div className="form-elem">
-                <label htmlFor="totalclassatt">Total Number of Classes Attended</label>
+                <label htmlFor="totalclassatt">Total Classes Attended</label>
                 <input type="number" id="totalclassatt" name="totalclassatt" onChange={props.handleChange} value={props.attdt.totalclassatt}></input>
             </div>
             <div className="form-elem">

@@ -33,6 +33,7 @@ form{
   align-items: center;
   justify-content: center;
   row-gap: 20px;
+  margin-bottom: 20px;
 }
 
 .form-elem{
@@ -66,4 +67,44 @@ button{
   background-color: #1953D6;
   border-radius: 5px;
   margin-top: 10px;
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.res-con{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fd5c63;
+}
+
+.res-con > h1 {
+  text-align: center;
+  color: white;
+  animation: blink 1s infinite; 
+  max-width: 400px;
+  width: 80%;
+}
+
+.at-det{
+  text-align: center;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+  max-width: 600px;
+  width: 80%;
 }
