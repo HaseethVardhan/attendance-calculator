@@ -54,7 +54,7 @@ export default function Result(props){
             <h1>{str}</h1>
             <h2 className="at-det">Attendance on {dattt} : {attper || ''}%</h2>
             {pb>0 ? <h2 className="at-det">Maximum Leaves can be taken : {pb} periods or {Math.floor(pb/7)} days</h2> : ''}
-            {pb>0 ? <h2 className="at-det">(your attendance will be 75% after bunking above number of periods)</h2> : ''}
+            {pb>0 ? <h2 className="at-det">(your attendance will be 75% after taking above number of leaves)</h2> : ''}
         </div>
     );
 }
