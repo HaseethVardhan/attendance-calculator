@@ -6,7 +6,7 @@ function countWorkingDays(startDate, endDate) {
     const end = new Date(endDate);
     let workingDaysCount = 0;
 
-    const holidays = ['2025-04-14','2025-04-18', '2025-04-28', '2025-04-29', '2025-04-30', '2025-05-01', '2025-05-02'];
+    const holidays = ['07-08-2025', '09-08-2025', '15-08-2025', '16-08-2025', '25-08-2025', '26-08-2025', '28-08-2025', '29-08-2025', '30-08-2025','27-08-2025', '05-09-2025', '13-09-2025'];
 
     while (currentDate <= end) {
         const dayOfWeek = currentDate.getDay();
